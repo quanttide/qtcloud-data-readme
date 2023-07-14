@@ -1,2 +1,16 @@
 format: jb-book
-root: README.md
+root: index.md
+parts:
+  - caption: 战略
+    chapters:
+      - file: strategies.md
+  - caption: 产品
+    chapters:  
+      - file: competitive_products/README.md
+        sections:
+          - file: competitive_products/airflow.md
+      - file: product_design.md
+      - file: product_operations.md
+  - caption: 技术
+    chapters:
+      - file: architectures.md
