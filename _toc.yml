@@ -1,7 +1,7 @@
 format: jb-book
 root: index.md
 parts:
-  - caption: 战略
+  - caption: 市场
     chapters:
       - file: strategies.md
   - caption: 产品
@@ -11,6 +11,7 @@ parts:
           - file: competitive_products/airflow.md
       - file: product_design.md
       - file: product_operations.md
+      - file: project_management.md
   - caption: 技术
     chapters:
       - file: architectures.md
