@@ -68,6 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'architecture/README';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="数据集层" href="datasets.html" />
     <link rel="prev" title="产品特性" href="../features/README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,7 +184,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">技术</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">架构设计</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">架构设计</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="datasets.html">数据集层</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html">数据应用层</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handlers.html">数据处理层</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orchestrators.html">数据调度和编排层</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataops.html">DataOps层</a></li>
+</ul>
+</li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">附录</span></p>
 <ul class="nav bd-sidenav">
@@ -342,11 +350,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>架构设计<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>数据集是在元数据上面封装一层，让它看起来像Hugging Face。这一层是云平台的具体实现。工程标准的约束会更弱一些。</p>
-<p>数据应用是Serverless或者App Engine的基础上封装一层，让他看起来成为一个标准化的网络应用建模。需要使用量潮网络应用标准。</p>
-<p>数据处理是在Serverless上封装一层，主要是优化Python的Runtime，让它对数据处理更友好。需要结合量潮云计算标准。</p>
-<p>数据调度和编排是在消息队列和工作流的基础上垫一层，同时本地可用。也是需要结合量潮云计算标准。看起来会像Airflow的效果。</p>
-<p>DataOps是在DevOps工具的基础上封装一层。需要结合量潮DevOps标准。</p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -387,6 +392,15 @@ document.write(`
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">产品特性</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="datasets.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">数据集层</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
