@@ -7,6 +7,12 @@ parts:
   - caption: 技术
     chapters:
       - file: architecture/README.md
+        sections:
+          - file: architecture/datasets.md
+          - file: architecture/applications.md
+          - file: architecture/handlers.md
+          - file: architecture/orchestrators.md
+          - file: architecture/dataops.md
   - caption: 附录
     chapters:
       - url: https://quanttide.github.io/quanttide-specification-of-data-engineering/
