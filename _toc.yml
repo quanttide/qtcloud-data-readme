@@ -1,17 +1,17 @@
 format: jb-book
 root: index.md
 parts:
-  - caption: 市场
-    chapters:
-      - file: strategies.md
   - caption: 产品
     chapters:  
-      - file: competitive_products/README.md
-        sections:
-          - file: competitive_products/airflow.md
-      - file: product_design.md
-      - file: product_operations.md
-      - file: project_management.md
+      - file: features/README.md
   - caption: 技术
     chapters:
-      - file: architectures.md
+      - file: architecture/README.md
+  - caption: 附录
+    caption:
+      - url: https://quanttide.github.io/quanttide-specification-of-data-engineering/
+        title: 量潮数据工程标准
+      - url: https://quanttide.github.io/quanttide-handbook-of-data-engineering/
+        title: 量潮数据工程手册
+      - url: https://quanttide.github.io/quanttide-tutorial-of-data-engineering/
+        title: 量潮数据工程教程
